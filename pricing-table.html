@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .pricing-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .plan {
+            background: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            flex: 1;
+            max-width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .plan:hover {
+            transform: scale(1.05);
+            background-color: #e0f7fa;
+            border-color: #00acc1;
+        }
+        
+        .plan h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .plan ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        
+        .plan ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .price {
+            font-size: 28px;
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #00796b;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #004d40;
+        }
+        /* Highlight the most popular plan */
+        
+        .popular {
+            border: 3px solid #ff9800;
+            background-color: #fff8e1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pricing-container">
+        <div class="plan">
+            <h2>Basic</h2>
+            <ul>
+                <li>5 GB Storage</li>
+                <li>10 Projects</li>
+                <li>Email Support</li>
+                <li>Community Access</li>
+            </ul>
+            <div class="price">$9/month</div>
+            <a href="#" class="btn">Choose Plan</a>
+        </div>
+
+        <div class="plan popular">
+            <h2>Standard</h2>
+            <ul>
+                <li>50 GB Storage</li>
+                <li>50 Projects</li>
+                <li>Priority Email Support</li>
+                <li>Access to Beta Features</li>
+            </ul>
+            <div class="price">$29/month</div>
+            <a href="#" class="btn">Choose Plan</a>
+        </div>
+
+        <div class="plan">
+            <h2>Premium</h2>
+            <ul>
+                <li>200 GB Storage</li>
+                <li>Unlimited Projects</li>
+                <li>24/7 Support</li>
+                <li>Advanced Analytics</li>
+            </ul>
+            <div class="price">$59/month</div>
+            <a href="#" class="btn">Choose Plan</a>
+        </div>
+    </div>
+</body>
+
+</html>
